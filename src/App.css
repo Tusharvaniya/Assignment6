@@ -1,21 +1,13 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +16,32 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border: 2px black solid;
+  width: 500px;
+  border-radius: 3px;
+  padding: 5px;
+}
+.FirstNameBox, .LastNameBox, .SaveBtn{
+  border: solid brown 2px;
+  height: 20px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 3px;
+  width: 200px;
+}
+.lbl{
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.SaveBtn{
+  width: 100px;
+  height: 40px;
+  background-color: darkgray;
+  font-size: large;
 }
