@@ -42,9 +42,18 @@ const Form = (props) => {
       <div>
         {showComponent
           ? props.names.map((name) => (
-              <h1>
-                {name.firstname} {" "} {name.lastname}
-              </h1>
+              <div className="namesContainer">
+                <h3 className="names">
+                  {name.firstname} {name.lastname}
+                </h3>
+                <button
+                  className="deleteBtn"
+                  value={props.names.indexOf(name)}
+                  onClick={(event) => props.onDelete(event.target.value)}
+                >
+                  Delete
+                </button>
+              </div>
             ))
           : ""}
       </div>
@@ -61,6 +70,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     onStoreResult: (data) => dispatch({ type: "ADD", payload: data }),
+    onDelete: (index) => dispatch({ type: "DELETE", index })
   };
 };
 

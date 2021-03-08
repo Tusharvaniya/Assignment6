@@ -16,7 +16,7 @@
   color: white;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +27,9 @@
   border-radius: 3px;
   padding: 5px;
 }
-.FirstNameBox, .LastNameBox, .SaveBtn{
+.FirstNameBox,
+.LastNameBox,
+.SaveBtn {
   border: solid brown 2px;
   height: 20px;
   padding: 10px;
@@ -35,13 +37,34 @@
   border-radius: 3px;
   width: 200px;
 }
-.lbl{
+.lbl {
   margin: 10px;
 }
 
-.SaveBtn{
+.SaveBtn {
   width: 100px;
   height: 40px;
   background-color: darkgray;
   font-size: large;
+}
+.deleteBtn {
+  width: 100px;
+  height: 40px;
+  background-color: darkgray;
+  font-size: large;
+  border: solid brown 2px;
+  align-self: center;
+  justify-self: flex-end;
+}
+.namesContainer {
+  width: 400px;
+  display: flex;
+  align-content: center;
+  justify-items: center;
+  border: solid brown 2px;
+  margin: 5px;
+}
+.names {
+  width: 250px;
+  padding-left: 10px;
 }
